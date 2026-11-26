@@ -2,7 +2,7 @@
 
 TERMINAL \>\_
 
-Manual for Ableton Move (Schwung module), version 0.118.169 (26 November 2026)
+Manual for Ableton Move (Schwung module), version 0.118.170 (26 November 2026)
 
 ![EFOS Terminal on the Move: pads, knobs and buttons](device.png)
 
@@ -61,7 +61,7 @@ Press REC so it lights, and press PLAY. Turning a knob now records its value on 
 
 | Track recordings | Run on the steps of that track (up to 64), up to 16 knobs per track. |
 | Global recordings | Sends, PERFORM and compressor run on the master clock (STUTTER knobs are per track and record on the track): the master length, or 4 bars when it is off. Up to 16 knobs. |
-| Indicator | A knob with a recording shows a small dot at the top right of its name on the screen, and a dashed rim on the device. |
+| Indicator | A knob with a recording shows a small dot at the top right of its name on the screen, and the light under the knob on the Move blinks. The light burns steadily when an LFO or random modulation moves that knob; with both, it blinks. |
 | Clear one knob | Hold DEL and turn that knob a little: its REC recording and its step P-locks go, on every knob. A small dot at the top right of a knob cell shows it has a recording or P-locks. On ENGINE this also removes its modulation links; the screen says what was cleared. |
 | Clear a page | SHIFT + REC: on a track page the recordings of that track, on PERF the global recordings. |
 
@@ -87,7 +87,7 @@ Pad row 1 works the same on every page. The selected track's pad is white. Press
 TRIGGERS has two pages of knobs (press TRIGGERS again for the next page). SHIFT + any knob on them = the same on all tracks.
 
 | ALGO | How the rhythm is made: EUCL (Euclidean: the hits spread as evenly as they can), TURING (a Turing machine: the rhythm changes by itself, see knob 2), ALG.G (algorithm grooves, a library of 16 grooves: FOUR, BACK, OFF, 8THS, 16THS, TRESIL, CLAVE, RUMBA, BOSSA, CINQ, DEMBOW, BREAK, 2STEP, SHUFFL, GALLOP, AFRO) ROLL (an even base rhythm like EUCL, with now and then a run of 16ths in a row on top: handy for a quick double kick or a burst of bass notes) or OTOMAT (the track plays on the wall hits of the shared OTOMAT field, see OTOMAT below; its own pattern is not used). Going back to an earlier algorithm brings its pattern back. |
-| Knob 2 | Follows ALGO. With TURING it is TURING: 0 = locked; turned up, every step that has just played may become a new hit or rest, at the density; fully up, every round is new. Back to 0 locks what you hear. LINK (PITCH 2) makes this and the melody TURING one machine. With ALG.G it is GROOVE: picks the groove. With ROLL it is ROLL.L: how many 16ths in a row (2–16). With EUCL it is empty (----). |
+| Knob 2 | Follows ALGO. With TURING it is TURING: 0 = locked; turned up, every step that has just played may become a new hit or rest, at the density; fully up, every round is new. Back to 0 locks what you hear. LINK (PITCH 2) makes this and the melody TURING one machine. With ALG.G it is GROOVE: picks the groove. With ROLL it is ROLL.L: how many 16ths in a row (2–16). With EUCL it is empty (----). With OTOMAT knobs 2–4 are CELL, COL and ROW (see OTOMAT below). |
 | DENS | Density: how many hits. With ALG.G the middle plays the groove as written; to the left only the heaviest hits stay, to the right ghost notes come in. With ROLL, DENS sets the hits of the even base rhythm; SHIFT + DENS = ROLL.D, how often a run comes (0 = no runs, otherwise at least one), for this track only. |
 | ROTATE | Turns the pattern step by step, to the right when you turn right, with every ALGO. With EUCL the pattern is made again rotated; with the others the steps there are move along (steps you drew move too). The rotation stays when DENS, GROOVE or ROLL.L makes a new pattern. |
 | PROB | Probability per step. |
@@ -120,12 +120,12 @@ Row 3 (purple) shapes a held repeat: pads 1–4 RISE, the repeat swells in from 
 
 A generative sequencer after Otomata by Batuhan Bozkurt (2011), built from its rules (own code). There is one field of 8 × 8 squares, shared by all tracks: each column belongs to a track (T1 left to T8 right) and so does each row (T1 top to T8 bottom). On the field are cells, each moving UP, RIGHT, DOWN or LEFT. Every 16th each cell moves one square. A cell that hits a wall turns around and plays a hit: a cell moving up or down plays the track of its column, a cell moving left or right the track of its row. When two or more cells land on the same square, each of them turns a quarter clockwise; so the pattern keeps changing slowly without you doing anything.
 
-Set ALGO (TRIGGERS) to OTOMAT on every track that should listen to the field; the other tracks keep their own pattern. The first time, the field starts with 5 cells. The page OTOMAT comes after the other TRIGGERS pages and is there only on a track with ALGO OTOMAT; the field is drawn at the bottom right of the screen: each cell is a dot with a tick on the side it moves to, the square you edit is a filled square.
+Set ALGO (TRIGGERS, knob 1) to OTOMAT on every track that should listen to the field; the other tracks keep their own pattern. A track on OTOMAT does not play its own steps: the step buttons show where the field played it this loop. The first time, the field starts with 5 cells, and a track that turns OTOMAT while no cell plays it gets a cell of its own (moving up in its column). On TRIGGERS page 1 knobs 2–4 then follow the ALGO, as knob 2 does for the others; knobs 5–8 stay. While you touch knob 2, 3 or 4 the lower half of the screen shows the field: each cell is a dot with a tick on the side it moves to, the square you edit is a filled square.
 
-| COL | The column of the square you edit (T1–T8). |
-| ROW | The row of the square you edit (T1–T8). |
-| CELL | The cell on that square: ---- (none), UP, RIGHT, DOWN, LEFT. UNDO takes it back. |
-| RND.F | A new random field with this many cells (0 = empty, up to 16). |
+| CELL | Knob 2: the cell on the square you edit: ---- (none), UP, RIGHT, DOWN, LEFT. UNDO takes it back. |
+| RND.F | SHIFT + knob 2: a new random field with this many cells (0 = empty, up to 16); the value shows how many cells there are now. |
+| COL | Knob 3: the column of the square you edit (T1–T8). |
+| ROW | Knob 4: the row of the square you edit (T1–T8). |
 
 PLAY from the start puts the field back where it was when you last changed it, so a song starts the same each time. The field is saved with the preset.
 

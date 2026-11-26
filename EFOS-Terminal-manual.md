@@ -2,7 +2,7 @@
 
 TERMINAL \>\_
 
-Manual for Ableton Move (Schwung module), version 0.118.171 (26 November 2026)
+Manual for Ableton Move (Schwung module), version 0.118.172 (26 November 2026)
 
 ![EFOS Terminal on the Move: pads, knobs and buttons](device.png)
 
@@ -49,7 +49,7 @@ Four keys on the left, each with its own pages. Page 1 of every key is the page 
 
 **Names:** a knob name gives the part it belongs to first, then what it does: F.ATK = the attack of the filter envelope, C.DEC = the decay of the click, STUT.P = the stutter PROB. Where the header already names the part, the name is a whole word (SIDECHAIN: AMOUNT, TIME, SOURCE). Families keep their name: VAR.T = variation of the triggers, LFO1.S = speed of LFO1. VAR is a little change every loop; RND (on the pads) is something new at once. Touch a knob to read its full name.
 
-**Option knobs:** a knob that picks an option (ALGO, MODE, HARM, VOICE, SCALE, CLOCK, LIST.T, LOOP.N, ROLL.L, CHORUS and the like) shows a short line on what the picked option does at the bottom of the screen while you touch it, for example A: NOTES RUN ON EVERY STEP. **Lists** longer than the screen (MENU, PRESETS, ENGINE, the file lists) have a scrollbar on the right: the block shows where you are and how long the list is.
+**Option knobs:** a knob with fewer than 15 options does not speed up, and each option holds for a few clicks so you do not shoot past it: 8 clicks with 2 or 3 options, 6 with 4, 5 with 5, down to 3 with 8 or more. A knob that picks an option (ALGO, MODE, HARM, VOICE, SCALE, CLOCK, LIST.T, LOOP.N, ROLL.L, CHORUS and the like) shows a short line on what the picked option does at the bottom of the screen while you touch it, for example A: NOTES RUN ON EVERY STEP. **Lists** longer than the screen (MENU, PRESETS, ENGINE, the file lists) have a scrollbar on the right: the block shows where you are and how long the list is.
 
 **SHIFT on a knob:** where a knob has its own SHIFT function (ATTACK, COLOR, PAN and so on), SHIFT gives that. Every other knob of a track sets the same value on all eight tracks while SHIFT is held; the screen says ALL TRACKS. On an FX slot it goes to every track with the same effect in that slot.
 
@@ -195,7 +195,7 @@ Page 1 (ENGINE) holds the shape of the sound and the knobs you play most, in the
 | SOPHIE | ALGO, COLOR, METAL, FDBK (SHIFT: MODE), M.DEC, CRUSH, DRIVE, F.TYPE |
 | ACID | WAVE, F.ENV, F.AMT, NOISE, N.TYPE, –, SLIDE (SHIFT: SLD.T), ACCENT (SHIFT: ACC.A); SLIDE and ACCENT are the same knobs as on PITCH 2 |
 | SHARK | WAVE, SUB, NOISE, DRIVE, F.ATK, VAR.S, CHORUS (OFF, I, II, I+II: the J60's Juno chorus), CHOR.A (how much, starts at 0) |
-| J60 | VOICE, PWM, SUB, DRIVE, F.ATK, VAR.S, CHORUS, CHOR.A (chorus amount; starts at 0, so turning CHORUS on adds nothing until you turn CHOR.A in). The page after ENGINE 2, **DCO**, is there only on a J60 track, after the Juno-60's panel: WAVE (SAW, PULSE, SAW+PU; PWM on SHIFT + RESO works on the pulse), NOISE (white noise into the filter), HPF (4 steps, 0 = flat), VIB (the LFO on the pitch, up to a semitone), VIB.R (0.3 to 19 Hz), VIB.D (the vibrato fades in after each note, up to 3 s), DRIFT (analog: each voice wanders slowly out of tune, up to 20 cents), F.KEY (the cutoff follows the note). |
+| J60 | In signal order (Lef 26 nov). ENGINE 2, the source: VOICE (SINGLE for bass, TRIAD, SPREAD, DEEP), WAVE (SAW, PULSE, SAW+PU), PWM (works on the pulse), SUB, NOISE (white noise into the filter), HPF (4 steps as on the Juno-60, 0 = flat), F.KEY (the cutoff follows the note), F.ATK. The page after it, **VIB/FX**, is there only on a J60 track: VIB (the LFO on the pitch, up to a semitone), VIB.R (0.3 to 19 Hz), VIB.D (the vibrato fades in after each note, up to 3 s), DRIFT (analog: each voice wanders slowly out of tune, up to 20 cents), DRIVE, VAR.S, CHORUS, CHOR.A (chorus amount; starts at 0, so turning CHORUS on adds nothing until you turn CHOR.A in). |
 | HIVE | ALGO, SPREAD, CHAR, PERC, DRIVE, F.ATK, VAR.S |
 | SID | ENGINE 2: the chip's envelope ATTACK, DECAY, SUSTN, REL (release) on knobs 1 to 4, then the ARP on 5 to 8: ARP (OFF, UP, DOWN, UP/DN, RND; SHIFT = HOLD), RATE (1/16, 1/32, 1/64 of the track clock, or 50 HZ, the C64 frame), OCT (-3 .. +3), CHORD (SINGLE, TRIAD, SPREAD, DEEP; the notes come from HARM on PITCH, as on J60). The SID has no VAR.D. Page 3 CHIP: WAVE (TRI, SAW, PULSE, NOISE and the combined T+S, P+T, P+S, P+T+S), PW (SHIFT = PWM, a slow sweep of the pulse width), SUB (OFF, -1 OCT, -2 OCT), SUB.L, CHIP (6581 or 8580). |
 | DUST | CHAOS, DENS, FDBK, METAL, NOISE, N.TYPE |

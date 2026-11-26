@@ -2,7 +2,7 @@
 
 TERMINAL \>\_
 
-Manual for Ableton Move (Schwung module), version 0.118.170 (26 November 2026)
+Manual for Ableton Move (Schwung module), version 0.118.171 (26 November 2026)
 
 ![EFOS Terminal on the Move: pads, knobs and buttons](device.png)
 
@@ -194,8 +194,8 @@ Page 1 (ENGINE) holds the shape of the sound and the knobs you play most, in the
 | HANDS | CLAPS, GAP, ROOM |
 | SOPHIE | ALGO, COLOR, METAL, FDBK (SHIFT: MODE), M.DEC, CRUSH, DRIVE, F.TYPE |
 | ACID | WAVE, F.ENV, F.AMT, NOISE, N.TYPE, –, SLIDE (SHIFT: SLD.T), ACCENT (SHIFT: ACC.A); SLIDE and ACCENT are the same knobs as on PITCH 2 |
-| SHARK | WAVE, SUB, NOISE, DRIVE, F.ATK, VAR.S, CHORUS (OFF, I, II, I+II: the J60's Juno chorus), CHOR.A (how much) |
-| J60 | VOICE, PWM, SUB, DRIVE, F.ATK, VAR.S, CHORUS, CHOR.A (chorus amount) |
+| SHARK | WAVE, SUB, NOISE, DRIVE, F.ATK, VAR.S, CHORUS (OFF, I, II, I+II: the J60's Juno chorus), CHOR.A (how much, starts at 0) |
+| J60 | VOICE, PWM, SUB, DRIVE, F.ATK, VAR.S, CHORUS, CHOR.A (chorus amount; starts at 0, so turning CHORUS on adds nothing until you turn CHOR.A in). The page after ENGINE 2, **DCO**, is there only on a J60 track, after the Juno-60's panel: WAVE (SAW, PULSE, SAW+PU; PWM on SHIFT + RESO works on the pulse), NOISE (white noise into the filter), HPF (4 steps, 0 = flat), VIB (the LFO on the pitch, up to a semitone), VIB.R (0.3 to 19 Hz), VIB.D (the vibrato fades in after each note, up to 3 s), DRIFT (analog: each voice wanders slowly out of tune, up to 20 cents), F.KEY (the cutoff follows the note). |
 | HIVE | ALGO, SPREAD, CHAR, PERC, DRIVE, F.ATK, VAR.S |
 | SID | ENGINE 2: the chip's envelope ATTACK, DECAY, SUSTN, REL (release) on knobs 1 to 4, then the ARP on 5 to 8: ARP (OFF, UP, DOWN, UP/DN, RND; SHIFT = HOLD), RATE (1/16, 1/32, 1/64 of the track clock, or 50 HZ, the C64 frame), OCT (-3 .. +3), CHORD (SINGLE, TRIAD, SPREAD, DEEP; the notes come from HARM on PITCH, as on J60). The SID has no VAR.D. Page 3 CHIP: WAVE (TRI, SAW, PULSE, NOISE and the combined T+S, P+T, P+S, P+T+S), PW (SHIFT = PWM, a slow sweep of the pulse width), SUB (OFF, -1 OCT, -2 OCT), SUB.L, CHIP (6581 or 8580). |
 | DUST | CHAOS, DENS, FDBK, METAL, NOISE, N.TYPE |

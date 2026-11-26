@@ -2,7 +2,7 @@
 
 The newest version of EFOS Terminal, a Schwung module for the Ableton Move, and its manual.
 
-Version: **0.118.170** (2026-11-26)
+Version: **0.118.171** (2026-11-26)
 
 - Firmware: [efos-module.tar.gz](https://github.com/screechpowers/EFOS-Terminal-downloads/raw/main/efos-module.tar.gz)
 - Manual (Markdown, plain text, easiest for AI tools): [EFOS-Terminal-manual.md](https://raw.githubusercontent.com/screechpowers/EFOS-Terminal-downloads/main/EFOS-Terminal-manual.md)
